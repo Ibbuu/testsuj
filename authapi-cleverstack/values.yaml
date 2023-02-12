@@ -1,0 +1,46 @@
+backend:
+  replicaCount: 1
+  image:
+    repository: asia.gcr.io/cleverstack-376306/cleverstack_auth
+    tag: latest
+    pullPolicy: Always
+  env: 
+    secret: cstack-auth-prod-env
+celerybeat:
+  replicaCount: 1
+  image:
+    repository: asia.gcr.io/cleverstack-376306/cleverstack_auth
+    tag: latest
+    pullPolicy: Always
+  env: 
+    secret: cstack-auth-prod-env
+    celerybrokerurl: redis://redis:6379/0
+  storage: 100Mi
+celery:
+  replicaCount: 1
+  image:
+    repository: asia.gcr.io/cleverstack-376306/cleverstack_auth
+    tag: latest
+    pullPolicy: Always
+  env: 
+    secret: cstack-auth-prod-env
+    celerybrokerurl: redis://redis:6379/0
+  storage: 100Mi
+ingress:
+  host: authapidev.cleverstack.in
+  tlssecret: authapidev-com-tls
+proxy:
+  replicaCount: 1
+  image:
+    repository: asia.gcr.io/cleverstack-376306/cleverstack_auth_proxy
+    tag: latest
+  upstreamhost: cstack-auth-backend-service
+  upstreamport: 8000
+redis:
+  replicaCount: 1
+  image:
+    repository: redis
+    tag: latest
+    pullPolicy: Always
+  env:
+    secret: cstack-auth-prod-env

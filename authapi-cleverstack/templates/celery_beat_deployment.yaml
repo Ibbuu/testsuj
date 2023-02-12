@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-beat-deployment
+  labels:
+    app: celery-beat
+spec:
+  replicas: {{ .Values.celerybeat.replicaCount }}
+  selector:
+    matchLabels:
+      app: celery-beat
+  template:
+    metadata:
+      labels:
+        app: celery-beat
+    spec:
+      containers:
+        - args:
+            - celery
+            - -A
+            - cleverstack
+            - worker
+            - -l
+            - info
+          name: celery-beat
+          image: "{{ .Values.celerybeat.image.repository }}:{{ .Values.celerybeat.image.tag }}"
+          imagePullPolicy: {{ .Values.celerybeat.image.pullPolicy }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.celerybeat.env.secret }}
+          env:
+            - name: CELERY_BROKER_URL
+              value: {{ .Values.celerybeat.env.celerybrokerurl }}
+          volumeMounts:
+            - mountPath: /home/cs-user/cs-celery
+              name: celery-beat-volume
+      restartPolicy: Always
+      volumes:
+        - name: celery-beat-volume
+          persistentVolumeClaim:
+            claimName: celery-beat-volume

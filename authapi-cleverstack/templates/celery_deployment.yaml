@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-deployment
+  labels:
+    app: celery
+spec:
+  replicas: {{ .Values.celery.replicaCount }}
+  selector:
+    matchLabels:
+      app: celery
+  template:
+    metadata:
+      labels:
+        app: celery
+    spec:
+      containers:
+        - args:
+            - celery
+            - -A
+            - cleverstack
+            - worker
+            - -l
+            - info
+          name: celery
+          image: "{{ .Values.celery.image.repository }}:{{ .Values.celery.image.tag }}"
+          imagePullPolicy: {{ .Values.celery.image.pullPolicy }}
+          envFrom:
+            - secretRef:
+                name: {{ .Values.celery.env.secret }}
+          env:
+            - name: CELERY_BROKER_URL
+              value: {{ .Values.celery.env.celerybrokerurl }}
+          volumeMounts:
+            - mountPath: /home/cs-user/cs-celery
+              name: celery-volume
+      restartPolicy: Always
+      volumes:
+        - name: celery-volume
+          persistentVolumeClaim:
+            claimName: celery-volume
