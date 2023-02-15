@@ -41,8 +41,8 @@ podTemplate(label: 'mypod', serviceAccount: 'default', containers: [
         //   checkout scm
         // }
             container('helm') { 
-                sh 'ls'
-                sh 'helm repo update'
+                sh '''ls'''
+                sh '''helm repo update'''
             }
         }         
     }
