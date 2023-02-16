@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cleverstack-376306",
+  "private_key_id": "bdc84122d28790c63ca47ec87532c31e0dfacacb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCaEbxkd4FcFLc\nhDLpeDzFEdyRUOYdAJY5Z+JQKsyGrRsOAveTUt5rVcl2KrLl9210N0K/AnE3TjRe\njpNKpPnliSj5eUrT9trq+VkINvA+LKnbwhlv+S5OUULq+1qwafl7nemFYVn9QvbN\nRgbwLsR9TRqewjejMKB2eUWE8dSFNN7Fj4HlRZWZmmXj/JCdbDtSJj7KowWkQq+D\nRPjaqSdASEoMOZAtK5EajrJraXVFWz9Jwz4wXDShWh2nX8o/9gyuh+rSz2a0dzcn\nZLTWdakURiQtMezCAHHgo4IiGeUK5FEPyuTEww2UtXlfcZFxftG5F8yB5Mv5EZ2F\nxhoxFP/TAgMBAAECggEAF4zQQ0U7UwdXUlVFYZjqK6lNQeE97vd6OzwFY1a77fic\nVWcwnI0mWnRK8mCbyVXe0Xw8Pq1KD7wOhgHZf+paR18FMqtp0CGQRXStP1yAX9fD\nP9bUhAb4gA5B//sw8jv0N/BaMIkpgI+THCzGfGP983vapK68VK14UsHAFSnCZ9xY\nXYnmYoxOfHvlrlNYNEnZ91KCoA5Tm39O44aBnr5rLva4n5rGm/1Cgsa1cAjQET+l\ndq80xYhRMzArCeLRG2/pV8htgXIv1+sLkklsBWmAM4C6we96BVCu6WGO+rXd7Dvk\n9gi2C8vlKtOZgRbBCusWM7j1kBoq06FI7/U4suHM6QKBgQD4ujTCQpXXngxugudo\nH68VLsF7tV4oE42D+hKZw81wPcTickY88tTBQOuSZdnUYwIDYJU5Q4RfYXdgFV6/\n85IY0NMKdsZucgrbkkXSWl6h5SIK6JouPmdnPkecR+psPRYTrXEkh8Ikay/+gXR4\n4jjQdtdUQPLg3WH/M8L53hrHBwKBgQDIF3hq0HxPEEa62LbKJs1cRgKjuMoVhH0+\nRrFqXgYOWf/a1m5N0XKPOm6ndnIexSSeN8YLOLb7q5t4Ra7H/iEMrEfwxtfh2F7E\nNaxOIHZsgCUXBYMj91670r6wBnbHg0qS1osFIaDyv4lnPUyT6SN3OGlha+/8ZgJX\n0rNL6s6h1QKBgQCyco2ljbYJgvfyVXKGjqzDas8f3SiXYifWtxSfQw5iZ76YpFnm\nImYn3FbmqrIUoY/xMlr9QYZ4E+pcghh/aNW5fiDbUgnddW56x7/WQkXAqy64Wtc7\nNERlmxYvdp0mWNE8/uO8zLWqAUjmtKQGkm8miQzGAu7+C3bibJWHRSU7AwKBgA7x\n6dWYkuBY59+G1khNE6Ojuwi9gaKPzcb8Ar5eHXeu8zRGNeDsFvFpvOAXMbjooq6K\nnekyqEAt9iPKmJ5pddB7gbgTMga1YYaoN6FyPUYnYB3TFJN4I4RF3mZJZU/Ll6NW\nEPYmJ95ZvgqPAow9qp96ACz9oeQpPl2O6ENwW1StAoGAQcOVu2znEqRLr+0Ccme5\n9b5j+PuTNIxKxEXGF2SX94ldTkxcH30EL+DlzVhD13Xn8WbQvoT+kre1dLEptytn\nKjqLsxkCuplpPggp05fBe7wkZE+PTZ1/JdQRyvYnJmWQ2BbGO+ygEBKcvdW2pAb/\noBWQ8P/3tqJu9mL0nDpWM/4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cs-user-cloud-storage@cleverstack-376306.iam.gserviceaccount.com",
+  "client_id": "114556602356284328970",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cs-user-cloud-storage%40cleverstack-376306.iam.gserviceaccount.com"
+}
