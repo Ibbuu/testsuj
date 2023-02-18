@@ -17,7 +17,7 @@ podTemplate(label: 'mypod', serviceAccount: 'default', containers: [
   ) {
     node('mypod') {
         stage('Get latest version of code') {
-          git url: 'https://github.com/Ibbuu/testsuj.git', credentialsId: '2546f0a6-fdd0-4aaa-9c94-9abe963d2f9c'
+          git url: 'https://github.com/Ibbuu/testsuj.git', credentialsId: 'github'
         }
         
         container('helm') { 
